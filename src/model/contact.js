@@ -6,7 +6,7 @@ const contactsSchema = new mongoose.Schema({
     company: String,
     industry: String,
     email: String,
-    mobile: String,
+    mobile: Number,
     country: String,
     userid: { type: mongoose.Schema.Types.ObjectId, ref: "User" }
 }, { timestamps: true })
